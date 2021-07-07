@@ -1,0 +1,49 @@
+/* footer */
+
+.footer {
+  background-color: #2c2c2c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 690px) {
+  .footer {
+    flex-direction: row;
+    text-align: start;
+    justify-content: space-between;
+  }
+}
+.footer__img {
+  margin: 50px auto auto;
+}
+@media (min-width: 690px) {
+  .footer__img {
+    margin: auto auto auto 80px;
+  }
+  .footer__redes {
+    align-items: center;
+    margin: 100px 80px;
+  }
+}
+
+.footer__facebook,
+.footer__instagram,
+.footer__github {
+  display: flex;
+  font-size: 30px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__github {
+  margin-bottom: 50px;
+}
+.footer__a {
+  font-size: 16px;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}

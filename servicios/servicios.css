@@ -1,0 +1,98 @@
+/* servicios */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0%;
+  overflow: auto;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80");
+}
+@media (min-width: 690px) {
+  .servicios {
+    background: linear-gradient(
+      107.17deg,
+      #958c40 29.35%,
+      rgba(156, 0, 210, 0.8) 78.73%
+    );
+  }
+}
+
+.servicios__titulo {
+  margin: 0;
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  padding: 70px;
+  background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80");
+}
+@media (min-width: 690px) {
+  .servicios__titulo {
+    text-align: initial;
+    margin-left: 50px;
+    background: linear-gradient(
+      107.17deg,
+      #958c40 29.35%,
+      rgba(156, 0, 210, 0.8) 78.73%
+    );
+    color: white;
+  }
+  .servicios__titulo:after {
+    content: "/Portfolio ";
+  }
+}
+.servicios__conteiner {
+  background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80");
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 690px) {
+  .servicios__conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(
+      107.17deg,
+      #958c40 29.35%,
+      rgba(156, 0, 210, 0.8) 78.73%
+    );
+  }
+}
+
+.servicios-uno {
+  width: 300px;
+  height: auto;
+  justify-content: center;
+  padding: 5px;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.servicios-uno__img {
+  object-fit: contain;
+  text-align: center;
+}
+.servicios-uno__imagen {
+  max-width: 200px;
+}
+.titulos-h3 {
+  font-family: "Poppins";
+  font-size: 24px;
+  text-align: center;
+}
+.servicios-uno__p {
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: auto auto;
+  font-family: "Poppins";
+  margin-bottom: 30px;
+}
