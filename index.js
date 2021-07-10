@@ -1,26 +1,53 @@
-function addWorkCard(params = {}) {
-  /* console.log(params); */
+function addWorkCard(data) {
+  console.log(data.prueba);
   const template = document.querySelector("#servicios-card-template");
   const conteinerEl = document.querySelector(".tercera-section__conteiner");
 
   template.content.querySelector(".tercera-section__titulo").textContent =
-    params.titulo;
+    data.titulo;
 
   template.content.querySelector(".contenedor-uno__p").textContent =
-    params.texto;
+    data.descripcion;
 
-  template.content.querySelector(".contenedor-uno__imagen").src = params.src;
+  template.content.querySelector(".contenedor-uno__imagen").src = data.imagen;
 
   var clone = document.importNode(template.content, true);
   conteinerEl.appendChild(clone);
 }
 
+function getWorks() {
+  return fetch(
+    "https://cdn.contentful.com/spaces/fobzvqw7vi99/environments/master/entries?access_token=C9sE2bA6FdNYvS3DR6AFLJmTelnkn8xZaUbL8B2c8gc&&content_type=servicios"
+  )
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      const jsonContenido = data.items.map((item) => {
+        const img = buscarEnAsset(item.fields.imagen.sys.id, data);
+        const imagenUrl = img.fields.file.url;
+
+        return {
+          titulo: item.fields.titulo,
+          descripcion: item.fields.descripcion,
+          imagen: imagenUrl,
+        };
+      });
+      return jsonContenido;
+    });
+}
+function buscarEnAsset(id, data) {
+  const arrayEncontrado = data.includes.Asset.find((asset) => {
+    return asset.sys.id == id;
+  });
+  return arrayEncontrado;
+}
+
 function main() {
-  addWorkCard({
-    titulo: "hola soy el titulo",
-    texto:
-      "aqui esperando a que argentina salga campeon despues de 35 años y quizas poder salir a dar una vuelta olimpica re manija con los pibes y tomando algo para pasar el rato",
-    src: "https://image.freepik.com/foto-gratis/bandera-argentina_1401-57.jpg",
+  getWorks().then(function (works) {
+    for (const w of works) {
+      addWorkCard(w);
+    }
   });
 
   createHeader(document.querySelector(".header__conteiner"));

@@ -111,6 +111,11 @@ body {
 @media (min-width: 690px) {
   .tercera-section__conteiner {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 912px) {
+  .tercera-section__conteiner {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -129,7 +134,8 @@ body {
   text-align: center;
 }
 .contenedor-uno__imagen {
-  max-width: 200px;
+  max-width: 280px;
+  max-height: 200px;
 }
 .titulos-h3 {
   font-family: "Poppins";
