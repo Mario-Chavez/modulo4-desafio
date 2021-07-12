@@ -23,7 +23,7 @@ body {
   }
 }
 
-.servicios__titulo {
+.portfolio__titulo {
   margin: 0;
   color: black;
   font-size: 32px;
@@ -32,7 +32,7 @@ body {
   background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80");
 }
 @media (min-width: 690px) {
-  .servicios__titulo {
+  .portfolio__titulo {
     text-align: initial;
     margin-left: 50px;
     background: linear-gradient(
@@ -42,11 +42,11 @@ body {
     );
     color: white;
   }
-  .servicios__titulo:after {
+  .portfolio__titulo:after {
     content: "/Servicios ";
   }
 }
-.servicios__conteiner {
+.portfolio__conteiner {
   background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80");
   width: auto;
   height: auto;
@@ -55,7 +55,7 @@ body {
   flex-direction: column;
 }
 @media (min-width: 690px) {
-  .servicios__conteiner {
+  .portfolio__conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background: linear-gradient(
@@ -66,7 +66,7 @@ body {
   }
 }
 
-.servicios-uno {
+.portfolio-uno {
   width: 300px;
   height: auto;
   justify-content: center;
@@ -75,11 +75,11 @@ body {
   border-radius: 5px;
   margin: 10px auto;
 }
-.servicios-uno__img {
+.portfolio-uno__img {
   object-fit: contain;
   text-align: center;
 }
-.servicios-uno__imagen {
+.portfolio-uno__imagen {
   max-width: 200px;
 }
 .titulos-h3 {
@@ -87,7 +87,7 @@ body {
   font-size: 24px;
   text-align: center;
 }
-.servicios-uno__p {
+.portfolio-uno__p {
   text-align: center;
   width: auto;
   height: auto;

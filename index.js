@@ -1,5 +1,4 @@
 function addWorkCard(data) {
-  console.log(data.prueba);
   const template = document.querySelector("#servicios-card-template");
   const conteinerEl = document.querySelector(".tercera-section__conteiner");
 
