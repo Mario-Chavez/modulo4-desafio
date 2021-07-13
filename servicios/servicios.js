@@ -20,7 +20,6 @@ function createServicios(el) {
             `;
 
   function addWorkCard(data) {
-    console.log(data);
     const template = serviciosEl.querySelector("#servicios-card-template");
     const conteinerEl = serviciosEl.querySelector(".servicios__conteiner");
 
