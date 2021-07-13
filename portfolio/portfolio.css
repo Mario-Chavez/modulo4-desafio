@@ -5,6 +5,16 @@
 body {
   margin: 0%;
   overflow: auto;
+  background-image: url("https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80");
+}
+@media (min-width: 690px) {
+  body {
+    background: linear-gradient(
+      107.17deg,
+      #958c40 29.35%,
+      rgba(156, 0, 210, 0.8) 78.73%
+    );
+  }
 }
 .portfolio {
   display: flex;
@@ -57,12 +67,17 @@ body {
 @media (min-width: 690px) {
   .portfolio__conteiner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background: linear-gradient(
       107.17deg,
       #958c40 29.35%,
       rgba(156, 0, 210, 0.8) 78.73%
     );
+  }
+}
+@media (min-width: 912px) {
+  .portfolio__conteiner {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -80,7 +95,8 @@ body {
   text-align: center;
 }
 .portfolio-uno__imagen {
-  max-width: 200px;
+  max-width: 280px;
+  max-height: 200px;
 }
 .titulos-h3 {
   font-family: "Poppins";
@@ -94,4 +110,10 @@ body {
   margin: auto auto;
   font-family: "Poppins";
   margin-bottom: 30px;
+}
+.portfolio-uno__enlace {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins";
+  justify-content: end;
 }

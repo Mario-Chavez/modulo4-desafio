@@ -2,7 +2,7 @@ function createServicios(el) {
   const serviciosEl = document.createElement("div");
   serviciosEl.innerHTML = `
   <div class="servicios">
-    <div class="header__conteiner"></div>
+    
     <h2 class="servicios__titulo">Servicios</h2>
     <div class="servicios__conteiner">
       <template id="servicios-card-template">
@@ -20,6 +20,7 @@ function createServicios(el) {
             `;
 
   function addWorkCard(data) {
+    console.log(data);
     const template = serviciosEl.querySelector("#servicios-card-template");
     const conteinerEl = serviciosEl.querySelector(".servicios__conteiner");
 
