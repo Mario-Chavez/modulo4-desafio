@@ -10,14 +10,14 @@ function createHeader(el) {
                     <div class="header__ventana"> 
                         <div class="header__ventana-button">
                             <button class="header__button-close">
-                                <img class="header__img" src="../img/Vector (2).png" alt="">
+                                <img class="header__img" src="./img/Vector (2).png" alt="">
                             </button>                            
                         </div>                       
                         <div class="header__menu">
-                            <a class="header__menu-a" href="../index.html"><i class="fas fa-step-backward"></i> </a>
-                            <a class="header__menu-a" href="../portfolio/portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a>
-                            <a class="header__menu-a" href="../servicios/servicios.html"><i class="fas fa-concierge-bell"></i> Servicios</a>
-                            <a class="header__menu-a" href="../contacto-page/contacto.html"><i class="far fa-address-book"></i> Contactos</a>                    
+                            <a class="header__menu-a" href="./index.html"><i class="fas fa-step-backward"></i> </a>
+                            <a class="header__menu-a" href="./portfolio/portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a>
+                            <a class="header__menu-a" href="./servicios/servicios.html"><i class="fas fa-concierge-bell"></i> Servicios</a>
+                            <a class="header__menu-a" href="./contacto-page/contacto.html"><i class="far fa-address-book"></i> Contactos</a>                    
                         </div>
                     </div>
         </header>
