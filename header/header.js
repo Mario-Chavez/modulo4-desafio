@@ -2,9 +2,9 @@ function createHeader(el) {
   const headerEl = document.createElement("div");
   headerEl.innerHTML = `
     <header class="header">
-                <img class="header__logo" src="../img/logo_m4-2.png" alt="">
+                <img class="header__logo" src="./img/logo_m4-2.png" alt="">
                 <button class="header__button">
-                    <img class="header__img" src="../img/burger.png" alt="">
+                    <img class="header__img" src="./img/burger.png" alt="">
                 </button>
                     
                     <div class="header__ventana"> 
