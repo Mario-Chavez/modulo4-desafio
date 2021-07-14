@@ -3,7 +3,7 @@ function createFooter(el) {
   footerEl.innerHTML = `
     <div class="footer">
         <div class="footer__img">
-            <img class="header__logo" src="../img/logo_m4-2.png" alt="">
+            <img class="header__logo" src="./img/logo_m4-2.png" alt="">
         </div>
         <div class="footer__redes">
             <div class="footer__facebook">
